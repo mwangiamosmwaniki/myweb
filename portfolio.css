@@ -243,7 +243,6 @@ nav ul li a:hover::after{
     width: fit-content;
     border: 1px solid #ff004f;
     padding: 14px 50px;
-    left: 5px;
     border-radius: 6px;
     text-decoration: none;
     color: white;
@@ -305,7 +304,6 @@ form input,form textarea{
 form .btn2{
     padding: 10px;
     font-size: 18px;
-    margin-top: 20px;
     cursor: pointer;
     margin-left: 5px;
 }
@@ -339,6 +337,10 @@ form .btn2{
     font-size: 20px;
     right: 20px;
     color: #000000;
+}
+.btn{
+    margin-left: 20px
+    left: 20px;
 }
 nav ul{
     background: #ff004f;
