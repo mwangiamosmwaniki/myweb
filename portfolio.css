@@ -390,6 +390,7 @@ nav ul li{
 }
 .contact-left, .contact-right{
     flex-basis: 100%;
+    margin-left: 5px;
 }
 .copyright{
     font-size: 14px;
