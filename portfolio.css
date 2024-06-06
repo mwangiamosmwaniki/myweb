@@ -19,7 +19,7 @@ body{
     background-size: cover;
     background-position: center;
 }
-.logo img{
+.logo{
     height: 195px;
     width: 225px;
     position: fixed;
@@ -329,7 +329,6 @@ form .btn2{
 .header-text{
     margin-top: 100%;
     font-size: 15px;
-    color: white;
 }
 .header-text h1{
     font-size: 30px;
