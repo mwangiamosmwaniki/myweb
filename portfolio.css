@@ -359,7 +359,7 @@ nav ul li{
 .container .openClose{
     position: absolute;
     top: 25px;
-    left: 24px;
+    right: 20px;
     cursor: pointer;
 }
 .sub-title{
