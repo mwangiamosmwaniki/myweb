@@ -20,9 +20,9 @@ body{
     background-position: center;
 }
 .logo{
-    position: fixed;
     height: 195px;
     width: 225px;
+    position: fixed;
 }
 .container{
     padding: 10px 1%;
@@ -193,6 +193,9 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+}
+.header-text{
+    color: white;
 }
 .work img{
     width: 100%;
