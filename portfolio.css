@@ -338,10 +338,15 @@ form .btn2{
     right: 20px;
     color: #000000;
 }
-.btn .btn2{
+.btn btn2{
     margin-left: 20px
     left: 20px;
 }
+.btn{
+    margin-left: 20px
+    left: 20px;
+}
+    
 nav ul{
     background: #ff004f;
     position: fixed;
