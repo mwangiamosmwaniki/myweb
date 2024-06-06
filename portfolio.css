@@ -20,9 +20,9 @@ body{
     background-position: center;
 }
 .logo{
+    position: fixed;
     height: 195px;
     width: 225px;
-    position: fixed;
 }
 .container{
     padding: 10px 1%;
