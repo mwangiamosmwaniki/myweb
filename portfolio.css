@@ -22,6 +22,7 @@ body{
 .logo{
     height: 195px;
     width: 225px;
+    position: fixed;
 }
 .container{
     padding: 10px 1%;
