@@ -22,7 +22,6 @@ body{
 .logo{
     height: 195px;
     width: 225px;
-    position: fixed;
 }
 .container{
     padding: 10px 1%;
@@ -305,8 +304,8 @@ form input,form textarea{
 form .btn2{
     padding: 10px;
     font-size: 18px;
+    margin-top: 20px;
     cursor: pointer;
-    margin-left: 5px;
 }
 .copyright{
     width: 100%;
@@ -331,23 +330,14 @@ form .btn2{
     font-size: 15px;
 }
 .header-text h1{
+    color: #fff;
     font-size: 30px;
 }
 .container .openClose{
     display: block;
     font-size: 20px;
-    right: 20px;
     color: #000000;
 }
-.btn btn2{
-    margin-left: 20px
-    left: 20px;
-}
-.btn{
-    margin-left: 20px
-    left: 20px;
-}
-    
 nav ul{
     background: #ff004f;
     position: fixed;
@@ -363,14 +353,14 @@ nav ul li{
     display: block;
     margin: 25px;
 }
-.nav ul li a{
+nav ul li a{
     color: white;
     background: none;
 }
 .container .openClose{
     position: absolute;
     top: 25px;
-    right: 20px;
+    right: 24px;
     cursor: pointer;
 }
 .sub-title{
@@ -391,7 +381,6 @@ nav ul li{
 }
 .contact-left, .contact-right{
     flex-basis: 100%;
-    margin-left: 5px;
 }
 .copyright{
     font-size: 14px;
@@ -430,8 +419,4 @@ html{
     bottom: 32px;
     pointer-events: auto;
     opacity: 1;
-}
-#msg{
-    text-align: center;
-    align-items: center;
 }
