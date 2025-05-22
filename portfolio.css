@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background: yellow;
+    background: ;#080808
     color: #fff;
 }
 
@@ -78,6 +78,7 @@ nav ul li a:hover::after {
 
 .header-text {
     background: white;
+    background-radius: 8px;
     margin-top: 20px; /* Reduced from 4px to 20px to control top space */
     padding-top: 10px; /* Optional: add if needed to tweak spacing */
     font-size: 30px;
@@ -449,7 +450,7 @@ form .btn2 {
 /* Small screens */
 @media only screen and (max-width: 600px) {
     .header-text {
-        margin-top: 20px; /* Adjust as needed for spacing */
+        margin-top: 10px; /* Adjust as needed for spacing */
         padding-top: 5px;
         font-size: 18px;
     }
