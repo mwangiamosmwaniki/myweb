@@ -300,6 +300,15 @@ nav ul li a:hover::after {
 .work:hover .layer {
     height: 100%;
 }
+/* Target just that specific image */
+.logo-centered {
+    display: block;
+    margin: 0 auto;
+    max-width: 130px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
 
 /* Buttons */
 .btn {
