@@ -441,7 +441,8 @@ form .btn2 {
 /* Small screens */
 @media only screen and (max-width: 600px) {
     .header-text {
-        margin-top: 10px; /* Adjust as needed for spacing */
+        
+        margin: 8px; /* Adjust as needed for spacing */
         padding-top: 5px;
         font-size: 18px;
     }
