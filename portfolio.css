@@ -77,7 +77,6 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    background: green;
     border-radius: 8px;
     margin-top: 20px; /* Reduced from 4px to 20px to control top space */
     padding-top: 10px; /* Optional: add if needed to tweak spacing */
