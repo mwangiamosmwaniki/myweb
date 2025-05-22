@@ -38,7 +38,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-weight: bold;
     font-size: 30px;
     position: relative;
@@ -76,7 +76,7 @@ nav ul li a:hover::after {
     }
 }
 
-..header-text {
+.header-text {
     background: white;
     margin-top: 20px; /* Reduced from 4px to 20px to control top space */
     padding-top: 10px; /* Optional: add if needed to tweak spacing */
@@ -449,19 +449,20 @@ form .btn2 {
 /* Small screens */
 @media only screen and (max-width: 600px) {
     .header-text {
-        margin-top: 100%;
-        font-size: 15px;
+        margin-top: 20px; /* Adjust as needed for spacing */
+        padding-top: 5px;
+        font-size: 18px;
     }
 
     .header-text h1 {
-        color: #fff;
-        font-size: 30px;
+        font-size: 28px;
+        margin-top: 0;
     }
 
     .container .openClose {
         display: block;
         font-size: 20px;
-        color: #000;
+        color: #fff;
         position: absolute;
         top: 25px;
         right: 24px;
