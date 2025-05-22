@@ -14,10 +14,7 @@ body {
     color: #fff;
 }
 
-#header {
-    width: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    background-size: cover;
+#header{
     background-position: center;
 }
 
@@ -84,8 +81,6 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    background: rgba(0, 0, 0, 0.7);
-    background-size: cover;
     margin-top: 4px;
     font-size: 30px;
     color: #000;
