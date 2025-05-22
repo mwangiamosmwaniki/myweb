@@ -77,11 +77,12 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    border-radius: 8px;
+    background: #7b7d7d;
+    border-radius: 12px;
     margin-top: 20px; /* Reduced from 4px to 20px to control top space */
     padding-top: 10px; /* Optional: add if needed to tweak spacing */
     font-size: 30px;
-    color: #000;
+    color: #fff;
     animation: fadeSlideIn 1.5s ease-out forwards;
     opacity: 0;
 }
