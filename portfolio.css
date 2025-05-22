@@ -76,9 +76,10 @@ nav ul li a:hover::after {
     }
 }
 
-.header-text {
+..header-text {
     background: white;
-    margin-top: 4px;
+    margin-top: 20px; /* Reduced from 4px to 20px to control top space */
+    padding-top: 10px; /* Optional: add if needed to tweak spacing */
     font-size: 30px;
     color: #000;
     animation: fadeSlideIn 1.5s ease-out forwards;
@@ -87,10 +88,11 @@ nav ul li a:hover::after {
 
 .header-text h1 {
     font-size: 80px;
-    margin-top: 3px;
+    margin-top: 0; /* Set to zero to eliminate unnecessary top space */
     animation: fadeSlideIn 2s ease-out 0.5s forwards;
     opacity: 0;
 }
+
 
 .header-text h1 span {
     color: rgb(250, 6, 120);
