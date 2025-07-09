@@ -30,12 +30,13 @@ nav {
   top: 0;
   z-index: 1000;
 }
-
+.nav-left{
+  border-radius: 18px !important;
+}
 .nav-left img {
   height: 80px;
   width: 220px;
   object-fit: contain;
-  border-radius: 18px !important;
 }
 
 .nav-right {
