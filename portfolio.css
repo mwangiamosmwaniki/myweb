@@ -238,7 +238,7 @@ nav ul li a:hover {
 /* Services Section */
 #services {
   padding: 60px 0;
-  background: #eef3fb;
+  background: #ece7e7;
   border-radius: 15px;
 }
 
@@ -294,6 +294,7 @@ nav ul li a:hover {
 
 /* Portfolio Section */
 #portfolio {
+  background: linear-gradient(135deg rgb(253, 207, 2), rgb(159, 181, 243));
   padding: 60px 0;
 }
 
@@ -310,7 +311,7 @@ nav ul li a:hover {
   border-radius: 25px;
   box-shadow: 0 14px 26px rgba(38, 70, 125, 0.12);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
-  background: white;
+  background: rgb(166, 206, 202);
   cursor: pointer;
 }
 
