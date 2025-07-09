@@ -102,7 +102,12 @@ nav ul li a:hover {
     color: white;
     margin: 20px 5px;
   }
-
+  nav ul li a{
+    color: white;
+  }
+  nav ul li a:hover{
+    color: rgb(255, 128, 128);
+  }
   .openClose.desktop {
     display: block;
   }
