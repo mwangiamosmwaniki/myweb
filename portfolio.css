@@ -82,15 +82,6 @@ nav ul li a:hover {
   cursor: pointer;
   display: none;
 }
-
-.openClose.desktop {
-  display: none;
-}
-
-.openClose.mobile {
-  display: none;
-}
-
 /* Responsive Navigation */
 @media screen and (max-width: 768px) {
   nav ul {
@@ -101,7 +92,7 @@ nav ul li a:hover {
     right: -250px;
     height: 100vh;
     width: 250px;
-    padding-top: 60px;
+    padding-top: 30px;
     transition: right 0.3s ease;
     z-index: 10;
   }
