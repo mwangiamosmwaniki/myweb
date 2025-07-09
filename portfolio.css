@@ -73,7 +73,7 @@ nav ul li a:hover::after {
 }
 
 nav ul li a:hover {
-  color: #020068;
+  color: #0e7a00;
 }
 
 .openClose {
@@ -86,7 +86,6 @@ nav ul li a:hover {
 @media screen and (max-width: 768px) {
   nav ul {
     background: #120f2c;
-    color: white;
     flex-direction: column;
     position: fixed;
     top: 0;
@@ -99,14 +98,13 @@ nav ul li a:hover {
   }
 
   nav ul li {
-    color: white;
-    margin: 20px 5px;
+    margin: 10px 5px;
   }
   nav ul li a{
-    color: white;
+    color: white !important;
   }
   nav ul li a:hover{
-    color: rgb(255, 128, 128);
+    color: rgb(255, 128, 128) !important;
   }
   .openClose.desktop {
     display: block;
