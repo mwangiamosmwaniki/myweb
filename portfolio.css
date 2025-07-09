@@ -140,7 +140,7 @@ nav ul li a:hover {
   max-width: 900px;
   margin: 4px auto 0;
   animation: fadeInUp 1s ease forwards;
-  text-align: center;
+  text-align: left;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
