@@ -129,8 +129,8 @@ nav ul li a:hover {
   padding: 20px 0 20px;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #0e008f 0%, #25fc49 100%);
-  box-shadow: 0 4px 10px rgb(255, 255, 255,);
+  background: linear-gradient(135deg, 2575fc 0%, #120f2c 100%);
+  box-shadow: 10px rgb(255, 255, 255,);
 }
 
 /* Header Text Section */
