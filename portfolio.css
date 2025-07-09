@@ -79,6 +79,8 @@ nav ul li a:hover {
 }
 
 .openClose {
+  margin: 4px;
+  top: 3px;
   font-size: 24px;
   color: white;
   cursor: pointer;
