@@ -127,7 +127,6 @@ nav ul li a:hover {
 
 /* Header */
 #header {
-  background: linear-gradient(135deg, #120f2c 0%, #2575fc 100%);
   color: white;
   padding: 80px 0 100px;
   position: relative;
@@ -135,6 +134,7 @@ nav ul li a:hover {
 }
 
 .header-text {
+  background: linear-gradient(135deg, #120f2c 0%, #2575fc 100%);
   max-width: 700px;
   margin: 60px auto 0;
   animation: fadeInUp 1s ease forwards;
