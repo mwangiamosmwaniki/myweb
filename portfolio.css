@@ -22,7 +22,6 @@ body {
 
 /* Navigation Bar */
 nav {
-  background: #120f2c; /* Darker nav background for contrast */
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
@@ -30,7 +29,6 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 .nav-left .logo {
@@ -63,7 +61,6 @@ nav ul li a::after {
   content: "";
   width: 0;
   height: 2px;
-  background: #ffdd57;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -97,7 +94,6 @@ nav ul li a:hover {
 @media screen and (max-width: 768px) {
   nav ul {
     flex-direction: column;
-    background: #120f2c;
     position: fixed;
     top: 0;
     right: -250px;
@@ -109,7 +105,7 @@ nav ul li a:hover {
   }
 
   nav ul li {
-    margin: 20px 0;
+    margin: 20px 5px;
   }
 
   .openClose.desktop {
@@ -131,7 +127,7 @@ nav ul li a:hover {
 
 /* Header */
 #header {
-  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  background: linear-gradient(135deg, #120f2c 0%, #2575fc 100%);
   color: white;
   padding: 80px 0 100px;
   position: relative;
