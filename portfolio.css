@@ -30,7 +30,7 @@ nav {
   z-index: 1000;
 }
 
-.nav-left .logo {
+.nav-left .logo img{
   height: 80px;
   width: 220px;
 }
