@@ -86,6 +86,7 @@ nav ul li a:hover {
 @media screen and (max-width: 768px) {
   nav ul {
     background: #120f2c;
+    color: white;
     flex-direction: column;
     position: fixed;
     top: 0;
@@ -94,7 +95,7 @@ nav ul li a:hover {
     width: 250px;
     padding-top: 30px;
     transition: right 0.3s ease;
-    z-index: 10;
+    z-index: 20;
   }
 
   nav ul li {
