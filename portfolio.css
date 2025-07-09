@@ -101,6 +101,7 @@ nav ul li a:hover {
     margin: 10px 10px;
   }
   nav ul li a{
+    margin: auto 10px;
     color: white !important;
   }
   nav ul li a:hover{
