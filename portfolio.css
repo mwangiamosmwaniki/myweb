@@ -468,6 +468,11 @@ form textarea:focus {
   outline: none;
   border-color: #6a11cb;
 }
+#msg {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
 
 /* Scroll Button */
 .scroll {
