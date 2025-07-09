@@ -8,6 +8,8 @@
 }
 
 body {
+  background: #f7f9fc;
+  color: #1e1e1e;
   line-height: 1.6;
 }
 
@@ -83,6 +85,14 @@ nav ul li a:hover {
   display: none;
 }
 
+.openClose.desktop {
+  display: none;
+}
+
+.openClose.mobile {
+  display: none;
+}
+
 /* Responsive Navigation */
 @media screen and (max-width: 768px) {
   nav ul {
@@ -109,8 +119,8 @@ nav ul li a:hover {
   .openClose.mobile {
     display: block;
     position: absolute;
-    top: 5px;
-    right: 9px;
+    top: 20px;
+    right: 20px;
   }
 
   .nav-right {
