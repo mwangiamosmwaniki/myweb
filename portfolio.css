@@ -30,9 +30,10 @@ nav {
   z-index: 1000;
 }
 
-.nav-left .logo img{
+.nav-left img {
   height: 80px;
   width: 220px;
+  object-fit: contain;
 }
 
 .nav-right {
