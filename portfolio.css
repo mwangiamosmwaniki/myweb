@@ -111,7 +111,7 @@ nav ul li a:hover {
   }
 
   nav ul li {
-    margin: 20px 0;
+    margin: 20px 5px;
   }
 
   .openClose.desktop {
@@ -121,7 +121,7 @@ nav ul li a:hover {
   .openClose.mobile {
     display: block;
     position: absolute;
-    top: 20px;
+    top: 5px;
     right: 20px;
   }
 
