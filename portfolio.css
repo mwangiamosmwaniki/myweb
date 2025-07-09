@@ -22,7 +22,7 @@ body {
 
 /* Navigation Bar */
 nav {
-  padding: 20px 0;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,11 +50,10 @@ nav ul {
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  font-weight: 600;
   position: relative;
   padding-bottom: 5px;
   transition: all 0.3s ease;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 nav ul li a::after {
@@ -129,7 +128,7 @@ nav ul li a:hover {
 #header {
   background: linear-gradient(135deg, #120f2c 0%, #2575fc 100%);
   color: white;
-  padding: 80px 0 100px;
+  padding: 20px 0 20px;
   position: relative;
   overflow: hidden;
   max-height: fit-content;
