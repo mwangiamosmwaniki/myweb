@@ -78,7 +78,7 @@ nav ul li a:hover {
 
 .openClose {
   font-size: 24px;
-  color: white;
+  color: rgb(0, 0, 0);
   cursor: pointer;
   display: none;
 }
@@ -106,6 +106,7 @@ nav ul li a:hover {
   }
 
   .openClose.mobile {
+    color:white;
     display: block;
     position: absolute;
     top: 20px;
