@@ -35,7 +35,7 @@ nav {
   height: 80px;
   width: 220px;
   object-fit: contain;
-  border-radius: 18px;
+  border-radius: 18px !important;
 }
 
 .nav-right {
@@ -538,6 +538,6 @@ footer {
     padding: 50px 10px;
   }
   .header-text p {
-    color: rgb(12, 241, 222);
+    color: rgb(12, 241, 222) !important;
   }
 }
