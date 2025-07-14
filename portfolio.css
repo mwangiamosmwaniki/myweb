@@ -183,9 +183,17 @@ nav ul li a:hover {
 .about-image img {
   width: 100%;
   max-width: 300px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
   border-radius: 50%;
   border: 4px solid #6a11cb;
   box-shadow: 0 12px 24px rgba(106, 17, 203, 0.4);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1.5s ease forwards;
+  animation-delay: 0.3s;
+  margin: auto;
+  display: block;
 }
 
 .about-content {
@@ -209,15 +217,6 @@ nav ul li a:hover {
   margin-bottom: 20px;
 }
 
-.tab-link {
-  padding: 8px 16px;
-  border: none;
-  background: #fff;
-  color: #333;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: 600;
-}
 .tab-titles {
   color: #131313;
   display: flex;
@@ -225,7 +224,7 @@ nav ul li a:hover {
   margin-bottom: 10px;
 }
 
-.tab-links {
+.tab-link {
   font-weight: 600;
   cursor: pointer;
   position: relative;
@@ -233,7 +232,7 @@ nav ul li a:hover {
   padding-bottom: 6px;
 }
 
-.tab-links.active-link::after {
+.tab-link.active-link::after {
   content: '';
   width: 50%;
   height: 3px;
