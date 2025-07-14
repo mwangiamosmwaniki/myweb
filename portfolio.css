@@ -218,28 +218,41 @@ nav ul li a:hover {
   cursor: pointer;
   font-weight: 600;
 }
-
-.tab-link.active {
-  background: #2575fc;
-  color: #fff;
-}
-
-.tab-content {
-  display: none;
-  color: #fff;
-}
-
-.tab-content.active {
-  display: block;
-}
-
-.tab-content ul {
-  list-style: none;
-  margin-top: 10px;
-}
-
-.tab-content ul li {
+.tab-titles {
+  color: #131313;
+  display: flex;
+  gap: 20px;
   margin-bottom: 10px;
+}
+
+.tab-links {
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  padding-bottom: 6px;
+}
+
+.tab-links.active-link::after {
+  content: '';
+  width: 50%;
+  height: 3px;
+  background: #2575fc;
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  border-radius: 2px;
+}
+
+.tab-contents {
+  display: none;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+.tab-contents.active-tab {
+  display: block;
 }
 /* Services Section */
 #services {
