@@ -1,33 +1,39 @@
+here is the html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amos Mwangi | Web Developer & Designer</title>
-  <link rel="stylesheet" href="portfolio.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mwangi Amos| Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css"/>
   <script src="https://kit.fontawesome.com/ef7bce14d8.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- Header -->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <div class="nav-left">
+          <a href="/"><img src="developer.png" alt="logo" /></a>
+        </div>
+        <div class="nav-right">
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="openClose mobile"><i class="fa fa-times" onclick="closemenu()"></i></li>
+          </ul>
+          <div class="openClose desktop">
+            <i class="fa fa-bars" onclick="openmenu()"></i>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
 
-  <!-- Navigation -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <a href="#"><img src="developer.png" alt="Logo"></a>
-      </div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="menu-toggle" id="menuToggle"><i class="fa fa-bars"></i></div>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
+  <!-- Header Text Section -->
   <section id="home" class="hero">
     <div class="container">
       <h1>Hi, I'm <span>Amos Mwangi</span></h1>
@@ -36,166 +42,177 @@
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="container about-grid">
-      <div class="about-image">
-        <img src="jnr.jpeg" alt="Amos Mwangi">
-      </div>
-      <div class="about-content">
-        <h2>About Me</h2>
-        <p>I’m a creative developer with a passion for problem-solving and technology. I offer a mix of design and development skills to build impactful digital solutions.</p>
-        
-        <div class="tabs">
-          <button class="tab-link active" data-tab="skills">Skills</button>
-          <button class="tab-link" data-tab="experience">Experience</button>
-          <button class="tab-link" data-tab="education">Education</button>
+  <!-- About -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="jnr.jpeg" />
         </div>
-
-        <div class="tab-content active" id="skills">
-          <ul>
-            <li><strong>UI/UX:</strong> Designing intuitive interfaces</li>
-            <li><strong>Graphic Design:</strong> Visual content creation</li>
-            <li><strong>Web Development:</strong> Frontend & Backend websites</li>
-            <li><strong>App Development:</strong> Android & iOS apps</li>
-          </ul>
-        </div>
-
-        <div class="tab-content" id="experience">
-          <ul>
-            <li><strong>2024:</strong> Attachment at Directorate of Public Communications</li>
-          </ul>
-        </div>
-
-        <div class="tab-content" id="education">
-          <ul>
-            <li><strong>2021 - Present:</strong> BSc IT, Karatina University</li>
-            <li><strong>2022:</strong> Virtual Assistant, ALX Africa</li>
-            <li><strong>2017 - 2020:</strong> KCSE, Ngecho High School</li>
-          </ul>
+        <div class="about-col-2">
+          <h1 class="sub-title">About me</h1>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+              <li><span>Graphic Design</span><br>Turning ideas into visuals</li>
+              <li><span>Web Development</span><br>Building responsive websites and apps</li>
+              <li><span>App Development</span><br>Creating Android/iOS apps</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>May 2024 - August 2024</span><br>Attache at Directorate of Public Communications</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2021 - Current</span><br>BSc IT, Karatina University</li>
+              <li><span>May 2022 - July 2022</span><br>Virtual Assistant, ALX Africa</li>
+              <li><span>2017 - 2020</span><br>KCSE, Ngecho High School</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- Services Section -->
-  <section id="services">
+  <!-- Services -->
+  <div id="services">
     <div class="container">
-      <h2>My Services</h2>
-      <div class="services-grid">
-        <div class="service">
-          <h3>Web Design</h3>
-          <p>Mobile-friendly, modern websites tailored to your business.</p>
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <h2>Web Design</h2>
+          <p>Designing user-friendly and mobile-responsive websites tailored to client needs.</p>
+          <a href="#portfolio">See examples</a>
         </div>
-        <div class="service">
-          <h3>Graphic Design</h3>
-          <p>Logos, social media graphics, and marketing materials.</p>
+        <div>
+          <h2>Graphic Design</h2>
+          <p>Logos, posters, business cards, and social media graphics that match your brand.</p>
+          <a href="#portfolio">See my work</a>
         </div>
-        <div class="service">
-          <h3>Web App Development</h3>
-          <p>Interactive web apps using HTML, CSS, JavaScript, and Python Django.</p>
+        <div>
+          <h2>Web App Development</h2>
+          <p>Creating robust, scalable, and interactive web apps using HTML, CSS, and JavaScript.</p>
+          <a href="#portfolio">Explore projects</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- Portfolio Section -->
-  <section id="portfolio">
+  <!-- Portfolio -->
+  <div id="portfolio">
     <div class="container">
-      <h2>My Work</h2>
-      <div class="portfolio-grid">
-        <div class="portfolio-item">
-          <img src="mem1.JPG" alt="Custom Website">
-          <div class="overlay">
-            <h4>Custom Website</h4>
-            <p>Portfolio site built with Django.</p>
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <!-- Coding Project -->
+        <div class="work">
+          <img src="mem1.JPG" alt="mesmconstruction" />
+          <div class="layer">
+            <h3>Custom Website</h3>
+            <p>A custom portfolio websites using Django.</p>
             <a href="https://amosjnr.pythonanywhere.com/" target="_blank"><i class="fa fa-external-link"></i></a>
             <a href="https://github.com/mwangiamosmwaniki/Sammnet" target="_blank"><i class="fa fa-github"></i></a>
           </div>
         </div>
-        <div class="portfolio-item">
-          <img src="sam2.JPG" alt="Admin Dashboard">
-          <div class="overlay">
-            <h4>Admin Dashboard</h4>
-            <p>Responsive admin dashboard with charts.</p>
+
+        <div class="work">
+          <img src="sam2.JPG" alt="sammnet" />
+          <div class="layer">
+            <h3>Responsive Admin Dashboard</h3>
+            <p>Built with HTML, CSS, and JS. Features sidebar, responsive layout, and charts.</p>
             <a href="https://smkenya.pythonanywhere.com/" target="_blank"><i class="fa fa-external-link"></i></a>
             <a href="https://github.com/mwangiamosmwaniki/Sammnet" target="_blank"><i class="fa fa-github"></i></a>
           </div>
         </div>
-        <div class="portfolio-item">
-          <img src="topex.png" alt="School Management System">
-          <div class="overlay">
-            <h4>School System</h4>
-            <p>Manage students, staff, and activities with Django.</p>
+
+        <div class="work">
+          <img src="topex.png" alt="Topex High" />
+          <div class="layer">
+            <h3>School Management System</h3>
+            <p>Full stack System for managing student and staff activities using Python Django.</p>
             <a href="https://momax.pythonanywhere.com/" target="_blank"><i class="fa fa-external-link"></i></a>
             <a href="https://github.com/mwangiamosmwaniki/Topex" target="_blank"><i class="fa fa-github"></i></a>
           </div>
         </div>
       </div>
+      <a href="https://github.com/amosmwaninikimwangi" class="btn" target="_blank">See more on GitHub</a>
     </div>
-  </section>
+  </div>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container contact-grid">
-      <div class="contact-info">
-        <h2>Contact Me</h2>
-        <p><i class="fa fa-envelope"></i> amosmwaniki40@gmail.com</p>
-        <p><i class="fa fa-phone"></i> <a href="tel:+254110930439">0110930439</a></p>
-        <div class="social-links">
-          <a href="https://www.facebook.com/amm.os.16"><i class="fa fa-facebook"></i></a>
-          <a href="https://www.instagram.com/mwangiamos15"><i class="fa fa-instagram"></i></a>
-          <a href="https://github.com/amosmwanikimwangi"><i class="fa fa-github"></i></a>
+  <!-- Contact -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><a href="#"><i class="fa fa-envelope-o"></i> amosmwaniki40@gmail.com</a></p>
+          <p><a href="#"><i class="fa fa-phone"></i> 0110930439</a></p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/amm.os.16"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/mwangiamos15"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/amosmwanikimwangi"><i class="fa fa-github"></i></a>
+          </div>
+          <a href="Curriculum Vitae Amos.pdf" download class="btn btn2">Download CV</a>
         </div>
-        <a href="Curriculum Vitae Amos.pdf" download class="btn">Download CV</a>
-      </div>
-
-      <div class="contact-form">
-        <form name="submit-to-google-sheet">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-          <button type="submit" class="btn">Send Message</button>
+        <div class="contact-right">
           <span id="msg"></span>
-        </form>
+          <form name="submit-to-google-sheet">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Amos Mwangi. All Rights Reserved.</p>
+    <div class="container">
+      <p>Copyright © 2025 Amos Mwangi.</p>
+    </div>
   </footer>
-
   <a href="https://wa.me/254110930439" class="whatsapp-float" target="_blank">
     <i class="fa fa-whatsapp"></i>
   </a>
+  
+  <a href="#" class="scroll"><i class="fa fa-chevron-up"></i></a>
 
-  <!-- Scripts -->
+  <!-- JS Scripts -->
   <script>
-    // Menu Toggle
-    const menuToggle = document.getElementById('menuToggle');
-    const navLinks = document.getElementById('navLinks');
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
 
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
 
-    // Tabs
-    const tabLinks = document.querySelectorAll('.tab-link');
-    const tabContents = document.querySelectorAll('.tab-content');
+    var sidemenu = document.getElementById("sidemenu");
 
-    tabLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        tabLinks.forEach(l => l.classList.remove('active'));
-        tabContents.forEach(c => c.classList.remove('active'));
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
 
-        link.classList.add('active');
-        document.getElementById(link.getAttribute('data-tab')).classList.add('active');
-      });
-    });
+    function closemenu() {
+      sidemenu.style.right = "-300px";
+    }
 
-    // Contact Form
     const scriptURL ='https://script.google.com/macros/s/AKfycbxjH74aMKU33jTpNqn83ChjeanT8SESpca7R9CK9GshecCl09OvbWZzp7YZwO1ccPe-5g/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
@@ -204,12 +221,17 @@
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
-          msg.innerHTML = "Message sent successfully!"
+          msg.innerHTML = "Message delivered successfully!"
           setTimeout(() => msg.innerHTML = "", 5000)
           form.reset()
         })
         .catch(error => console.error('Error!', error.message))
     })
+
+    const scroll = document.querySelector(".scroll");
+    window.addEventListener("scroll", () => {
+      scroll.classList.toggle("active", window.pageYOffset > 100);
+    });
   </script>
 </body>
 </html>
