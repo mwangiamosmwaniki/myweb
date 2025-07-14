@@ -171,7 +171,14 @@ nav ul li a:hover {
   background: #6fb7b9;
 }
 
-.about-col-1 img {
+.about-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-image img {
   width: 100%;
   max-width: 300px;
   aspect-ratio: 1/1;
@@ -187,16 +194,18 @@ nav ul li a:hover {
   display: block;
 }
 
-.about-col-2 {
-  color: #fff;
+.about-content {
   flex: 1;
-  padding: 20px;
+  color: #fff;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
+.about-content h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  margin-bottom: 20px;
 }
 
 .sub-title {
