@@ -53,9 +53,9 @@
         <p>I’m a creative developer with a passion for problem-solving and technology. I offer a mix of design and development skills to build impactful digital solutions.</p>
         
         <div class="tabs">
-          <button class="tab-link "active" onclick="opentab('education')" data-tab="skills">Skills</button>
-          <button class="tab-link" onclick="opentab('education')" data-tab="experience">Experience</button>
-          <button class="tab-link" onclick="opentab('education')" data-tab="education">Education</button>
+          <button class="tab-link active" data-tab="skills">Skills</button>
+          <button class="tab-link" data-tab="experience">Experience</button>
+          <button class="tab-link" data-tab="education">Education</button>
         </div>
 
         <div class="tab-content active" id="skills">
@@ -192,20 +192,18 @@
 
   <!-- JS Scripts -->
   <script>
-    var tablinks = document.getElementsByClassName("tab-link");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+    const tabLinks = document.querySelectorAll('.tab-link');
+    const tabContents = document.querySelectorAll('.tab-content');
 
-    function opentab(tabname) {
-      for (tablink of tablinks) {
-        tablink.classList.remove("active");
-      }
-      for (tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
-      }
-      event.currentTarget.classList.add("active-link");
-      document.getElementById(tabname).classList.add("active-tab");
-    }
+    tabLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        tabLinks.forEach(l => l.classList.remove('active'));
+        tabContents.forEach(c => c.classList.remove('active'));
 
+        link.classList.add('active');
+        document.getElementById(link.getAttribute('data-tab')).classList.add('active');
+      });
+    });
     var sidemenu = document.getElementById("sidemenu");
 
     function openmenu() {
