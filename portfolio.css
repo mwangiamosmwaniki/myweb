@@ -31,7 +31,6 @@ nav {
   z-index: 1000;
 }
 .nav-left {
-  background: white;
   border-radius: 8px;
   overflow: hidden; 
   width: 210px;
