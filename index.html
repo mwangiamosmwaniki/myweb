@@ -42,43 +42,46 @@
   </section>
 
   <!-- About -->
-  <div id="about">
-    <div class="container">
-      <div class="row">
-        <div class="about-col-1">
-          <img src="jnr.jpeg" />
+<section id="about">
+    <div class="container about-grid">
+      <div class="about-image">
+        <img src="jnr.jpeg" alt="Amos Mwangi">
+      </div>
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>I’m a creative developer with a passion for problem-solving and technology. I offer a mix of design and development skills to build impactful digital solutions.</p>
+        
+        <div class="tabs">
+          <button class="tab-link active" data-tab="skills">Skills</button>
+          <button class="tab-link" data-tab="experience">Experience</button>
+          <button class="tab-link" data-tab="education">Education</button>
         </div>
-        <div class="about-col-2">
-          <h1 class="sub-title">About me</h1>
-          <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-            <p class="tab-links" onclick="opentab('education')">Education</p>
-          </div>
-          <div class="tab-contents active-tab" id="skills">
-            <ul>
-              <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-              <li><span>Graphic Design</span><br>Turning ideas into visuals</li>
-              <li><span>Web Development</span><br>Building responsive websites and apps</li>
-              <li><span>App Development</span><br>Creating Android/iOS apps</li>
-            </ul>
-          </div>
-          <div class="tab-contents" id="experience">
-            <ul>
-              <li><span>May 2024 - August 2024</span><br>Attache at Directorate of Public Communications</li>
-            </ul>
-          </div>
-          <div class="tab-contents" id="education">
-            <ul>
-              <li><span>2021 - Current</span><br>BSc IT, Karatina University</li>
-              <li><span>May 2022 - July 2022</span><br>Virtual Assistant, ALX Africa</li>
-              <li><span>2017 - 2020</span><br>KCSE, Ngecho High School</li>
-            </ul>
-          </div>
+
+        <div class="tab-content active" id="skills">
+          <ul>
+            <li><strong>UI/UX:</strong> Designing intuitive interfaces</li>
+            <li><strong>Graphic Design:</strong> Visual content creation</li>
+            <li><strong>Web Development:</strong> Frontend & Backend websites</li>
+            <li><strong>App Development:</strong> Android & iOS apps</li>
+          </ul>
+        </div>
+
+        <div class="tab-content" id="experience">
+          <ul>
+            <li><strong>2024:</strong> Attachment at Directorate of Public Communications</li>
+          </ul>
+        </div>
+
+        <div class="tab-content" id="education">
+          <ul>
+            <li><strong>2021 - Present:</strong> BSc IT, Karatina University</li>
+            <li><strong>2022:</strong> Virtual Assistant, ALX Africa</li>
+            <li><strong>2017 - 2020:</strong> KCSE, Ngecho High School</li>
+          </ul>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Services -->
   <div id="services">
