@@ -217,6 +217,15 @@ nav ul li a:hover {
   margin-bottom: 20px;
 }
 
+.tab-link {
+  padding: 8px 16px;
+  border: none;
+  background: #fff;
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
 .tab-titles {
   color: #131313;
   display: flex;
@@ -224,13 +233,6 @@ nav ul li a:hover {
   margin-bottom: 10px;
 }
 
-.tab-link {
-  font-weight: 600;
-  cursor: pointer;
-  position: relative;
-  font-size: 16px;
-  padding-bottom: 6px;
-}
 
 .tab-link.active-link::after {
   content: '';
