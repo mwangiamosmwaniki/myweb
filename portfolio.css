@@ -67,11 +67,12 @@ nav ul li a {
 
 nav ul li a::after {
   content: "";
-  width: 0;
-  height: 2px;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -2px; /* Adjust the distance of the underline */
+  width: 0%;
+  height: 2px; /* Thickness of underline */
+  background: #28a745; /* Underline color */
   transition: width 0.3s ease;
 }
 
@@ -79,10 +80,6 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-nav ul li a:hover {
-  background: #0e7a00;
-  height: 3px;
-}
 
 .openClose {
   font-size: 24px;
