@@ -82,6 +82,7 @@ nav ul li a:hover{
   color: rgb(0, 0, 0);
   cursor: pointer;
   display: none;
+  margin-right: 10px;
 }
 /* Responsive Navigation */
 @media screen and (max-width: 768px) {
@@ -460,64 +461,134 @@ nav ul li a:hover{
 }
 
 /* Contact */
+/* Contact Section */
 #contact {
-  background: rgb(63, 63, 63);
-  padding: 60px 0;
+  background: #3f3f3f;
+  padding: 70px 20px;
+  color: white;
+}
+
+#contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
 }
 
 .contact-left,
 .contact-right {
-  flex: 1;
-  margin-top: 20px;
+  flex: 1 1 45%;
 }
-.contact-left h1{
-  font-size: 20;
+
+.contact-left h1 {
+  font-size: 32px;
   font-weight: bold;
-  color: white;
+  margin-bottom: 20px;
+  color: #ffdd57;
+}
+
+.contact-left p {
+  margin: 12px 0;
+  font-size: 16px;
 }
 
 .contact-left p a {
   color: #ffd000;
   text-decoration: none;
-  margin-bottom: 10px;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.contact-left p a:hover {
+  color: #ff6b6b;
+}
+
+.social-icons {
+  margin: 20px 0;
 }
 
 .social-icons a {
   color: #f07cff;
-  margin-right: 20px;
+  margin-right: 18px;
   font-size: 22px;
-  transition: color 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #ffa113;
+  color: #ffdd57;
+  transform: scale(1.2);
 }
 
-form input,
-form textarea {
+.contact-right form {
+  background: #4a4a4a;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.contact-right form input,
+.contact-right form textarea {
   width: 100%;
-  padding: 12px 15px;
-  margin-top: 12px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  border: none;
+  border-radius: 8px;
   font-size: 15px;
-  resize: vertical;
-  transition: border-color 0.3s ease;
+  outline: none;
+  background: #f9f9f9;
 }
 
-form input:focus,
-form textarea:focus {
-  outline: none;
-  border-color: #6a11cb;
+.contact-right form input:focus,
+.contact-right form textarea:focus {
+  border: 2px solid #6a11cb;
+  background: #fff;
 }
-#msg {
-  color: #fff;
+
+.contact-right form button {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #2575fc;
+  color: white;
   font-weight: bold;
-  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
+
+.contact-right form button:hover {
+  background: #0f52ba;
+}
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+  #contact .row {
+    flex-direction: column;
+  }
+
+  .contact-left,
+  .contact-right {
+    flex: 1 1 100%;
+  }
+
+  .contact-left h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .contact-left p {
+    text-align: center;
+  }
+
+  .social-icons {
+    text-align: center;
+  }
+
+  .contact-right form {
+    margin-top: 20px;
+  }
+}
+
 .whatsapp-float {
   position: fixed;
   bottom: 90px; /* Adjust if needed */
@@ -620,4 +691,5 @@ footer {
     color: rgb(12, 241, 222) !important;
   }
 }
+
 
