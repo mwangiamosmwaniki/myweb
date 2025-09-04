@@ -301,7 +301,9 @@ nav ul li a:hover{
   flex-wrap: wrap;
   justify-content: center;
 }
-
+.container h1{
+  color: black;
+}
 .services-list div {
   flex: 1 1 280px;
   background: rgb(209, 205, 205);
@@ -347,61 +349,68 @@ nav ul li a:hover{
 
 /* Portfolio Section */
 #portfolio {
-  background: linear-gradient(135deg,rgb(179, 107, 0), rgb(214, 147, 2));
-  padding: 60px 0;
+  background: linear-gradient(135deg, rgb(179, 107, 0), rgb(214, 147, 2));
+  padding: 70px 20px;
+  color: white;
+  text-align: center;
+}
+
+#portfolio h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #fff;
 }
 
 .work-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 25px;
-  margin-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
 }
 
 .work {
   position: relative;
   overflow: hidden;
-  border-radius: 25px;
-  box-shadow: 0 14px 26px rgba(38, 70, 125, 0.12);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-  background: rgb(251, 255, 255);
-  cursor: pointer;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .work:hover {
-  transform: scale(1.06);
-  box-shadow: 0 25px 50px rgba(38, 70, 125, 0.25);
+  transform: translateY(-10px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.25);
 }
 
 .work img {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  display: block;
-  border-radius: 25px 25px 0 0;
-  transition: transform 0.3s ease;
+  border-radius: 18px 18px 0 0;
+  transition: transform 0.4s ease;
 }
 
 .work:hover img {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
 .layer {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(38, 70, 125, 0.85);
   height: 100%;
   width: 100%;
-  color: white;
+  background: rgba(38, 70, 125, 0.88);
+  border-radius: 18px;
   opacity: 0;
-  padding: 25px 30px;
-  transition: opacity 0.4s ease;
-  border-radius: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  padding: 25px;
+  transition: opacity 0.4s ease;
+  text-align: center;
 }
 
 .work:hover .layer {
@@ -409,30 +418,58 @@ nav ul li a:hover{
 }
 
 .layer h3 {
-  margin-bottom: 12px;
   font-size: 22px;
-  font-weight: 700;
+  margin-bottom: 12px;
   color: #ffdd57;
+  font-weight: bold;
 }
 
 .layer p {
   font-size: 15px;
-  line-height: 1.5;
-  margin-bottom: 15px;
   color: #f0e68c;
+  margin-bottom: 18px;
+  line-height: 1.5;
 }
 
 .layer a {
-  margin-right: 15px;
   color: white;
   font-size: 22px;
-  display: inline-block;
-  transition: color 0.3s ease;
+  margin: 0 12px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .layer a:hover {
   color: #ffdd57;
+  transform: scale(1.2);
 }
+
+#portfolio .btn {
+  margin-top: 40px;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  #portfolio h1 {
+    font-size: 28px;
+  }
+
+  .work-list {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .layer h3 {
+    font-size: 20px;
+  }
+
+  .layer p {
+    font-size: 14px;
+  }
+}
+
 
 /* Buttons */
 .btn {
@@ -691,5 +728,6 @@ footer {
     color: rgb(12, 241, 222) !important;
   }
 }
+
 
 
