@@ -708,10 +708,13 @@ footer {
   }
 
   .about-image {
-  display: flex;
-  justify-content: center; 
-  margin: 20px auto;      
-}
+    display: flex;
+    justify-content: center; 
+    margin: 20px auto;      
+  }
+  .about-content{
+     margin: auto 10px;
+  }
   .services-list {
     flex-direction: column;
     width: 90%;
@@ -735,6 +738,7 @@ footer {
     color: rgb(12, 241, 222) !important;
   }
 }
+
 
 
 
